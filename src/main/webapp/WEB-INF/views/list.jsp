@@ -26,6 +26,17 @@
   background-color: #006bb3;
   color: white;
 }
+.logout{
+	background-color: lightgreen;
+	color : black;
+	width: 100px;
+}
+.table{
+	display: flex;
+}
+.body{
+	background-color: lightblue;
+}
 </style>
 <script>
 	function delete_ok(id){
@@ -34,10 +45,12 @@
 	}
 </script>
 </head>
-<body>
-<h1>게시판</h1>
-<h3><a href="../login/logout">logout</a></h3>
+<body class="body">
+<h3 class="logout"><a href="../login/logout">logout</a></h3>
+<div class ="table">
+
 <table id="list" width="90%">
+	<caption><h1>환자 등록 리스트</h1></caption>
 <tr>
 	<th>번호</th>
 	<th>이름</th>
@@ -69,6 +82,7 @@
 	</tr>
 </c:forEach>
 </table>
+</div>
 <br/><a href="add">Add New Post</a>
 </body>
 </html>

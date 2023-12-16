@@ -7,19 +7,32 @@
 <head>
   <meta charset="UTF-8">
   <title>View Page</title>
+  <style>
+    .name{
+      text-align: center;
+    }
+    .form{
+      background-color: white;
+      margin: auto;
+      width: 50%;
+      border: 2px solid cornflowerblue;
+    }
+    .back{
+      background-color: lightblue;
+    }
+  </style>
 </head>
-<body>
-
-<h1>View Page</h1>
-<p>TItle: ${boardVO.title}</p>
-<p>Singer: ${boardVO.singer}</p>
-<p>Year: ${boardVO.year}</p>
-<p>Category: ${boardVO.category}</p>
-<p>Producer: ${boardVO.producer}</p>
-<p>Nationality: ${boardVO.nationality}</p>
-<p>Link: ${boardVO.link}</p>
-<p>Content: ${boardVO.content}</p>
-
+<body class = "back">
+<h1 class= "name">환자 정보 상세 보기</h1>
+<div class ="form">
+<p>이름: ${patientVO.name}</p>
+<p>나이: ${patientVO.age}</p>
+<p>성별: ${patientVO.gender}</p>
+<p>전화번호: ${patientVO.phone}</p>
+<p>주소: ${patientVO.address}</p>
+<p>증상: ${patientVO.sick}</p>
+<p>처방: ${patientVO.heal}</p>
+</div>
 
 
 <a href ="../list">Back</a>

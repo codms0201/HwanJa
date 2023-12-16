@@ -36,7 +36,7 @@ public class PatientController {
     @RequestMapping(value = "/patient/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model) {
        PatientVO patientVO = patientService.getPatient(id);
-        model.addAttribute("boardVO", patientVO);
+        model.addAttribute("patientVO", patientVO);
         return "editform";
     }
     @RequestMapping(value = "/patient/editok", method = RequestMethod.POST)
